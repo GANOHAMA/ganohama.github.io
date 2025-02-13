@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무료 자료 다운로드 준비 중...</title>
+    <meta http-equiv="refresh" content="5;url=https://내블로그.com">
+    <script>
+        let seconds = 5;
+        function countdown() {
+            if (seconds > 0) {
+                document.getElementById("countdown").innerText = seconds;
+                seconds--;
+                setTimeout(countdown, 1000);
+            }
+        }
+    </script>
+</head>
+<body onload="countdown()">
+    <h2>무료 자료 다운로드를 준비 중입니다...</h2>
+    <p>잠시만 기다려 주세요! <span id="countdown">5</span>초 후 자동으로 이동합니다.</p>
+
+    <!-- 👇 애드센스 광고 삽입 가능 -->
+    <div style="margin-top: 20px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <p>자동으로 이동하지 않으면 <a href="https://내블로그.com">여기를 클릭하세요</a>.</p>
+</body>
+</html>
